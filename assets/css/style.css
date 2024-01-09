@@ -25,13 +25,47 @@ body {
 }
 
 header {
+  width: 100vw;
   background-color: rgba(21,21,21,0.3);
   padding: 1.3rem;
   text-align: center;
 }
 
 h1 {
+  
+}
 
+form, div, select {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3rem;
+  margin: 0.5rem 5rem;
+}
+
+input[type="text"] {
+  width: auto;
+  padding: 1rem;
+  background-color: rgba(249, 249, 249, 0.3);
+  border: none;
+  border-radius: 0.3rem;
+}
+
+select, button {
+  background-color: rgba(49, 49, 49, 0.9);
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: auto;
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .product {
@@ -40,15 +74,22 @@ h1 {
   margin: 1rem;
 }
 
-.product img {
-  max-width: 20%;
+img {
+  max-width: 30%;
 }
 
-.product h3 {
-  margin-top: 0;
+h3 {
+  font-size: 0.9rem;
 }
 
-.product button {
+p {
+  font-family: "Raleway-Medium";
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: darkslateblue;
+}
+
+main button {
   background-color: rgba(21,21,21,0.3);
   color: white;
   padding: 0.5rem 1rem;
