@@ -37,6 +37,7 @@ const showProduct = (einProduct) => {
     <h3>${einProduct.title}</h3>
     <p>${einProduct.price} €</p>
     <button onclick = "addToCart(${einProduct.id})">Price Bomb</button>
+    </div>
     `
 }
 
@@ -44,8 +45,17 @@ getApiFunction(apiAllProduct)
 getApiFunction(apiImage)
 getApiFunction(apiCategories)
 getApiFunction(apiPrice)
+getApiFunction(addToCart)
 
 
+const sortProduct = (sortType) => {
+    if (sortType === "lowTohigh") {
+        einProduct.sort((a, b) => a.price - b.price)
+    } else if (sortType  === "highTolow") {
+        einProduct.sort((a, b) => b.price - a.price)
+    }
+    showProduct(einProduct)
+}
 
 // version1
 // fetch('https://fakestoreapi.com/products?sort=price')
