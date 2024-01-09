@@ -1,0 +1,56 @@
+/* $font-family: "Raleway-Light" */
+
+@font-face {
+  font-family: "Raleway-Light";
+  src: url(../font/Raleway-Light.ttf);
+}
+
+@font-face {
+  font-family: "Raleway-Medium";
+  src: url(../font/Raleway-Medium.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway-Light";
+  background-image: url(../img/pexels-brand-&-palms-768975.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+header {
+  background-color: rgba(21,21,21,0.3);
+  padding: 1.3rem;
+  text-align: center;
+}
+
+h1 {
+
+}
+
+.product {
+  border: 1px solid rgba(49,49,49,0.15);
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.product img {
+  max-width: 20%;
+}
+
+.product h3 {
+  margin-top: 0;
+}
+
+.product button {
+  background-color: rgba(21,21,21,0.3);
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
