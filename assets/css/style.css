@@ -32,7 +32,7 @@ header {
 }
 
 h1 {
-  
+  color: darkslateblue;
 }
 
 form, div, select {
@@ -52,6 +52,7 @@ input[type="text"] {
 }
 
 select, button {
+  width: min-content;
   background-color: rgba(49, 49, 49, 0.9);
   color: white;
   border: none;
@@ -90,7 +91,7 @@ p {
 }
 
 main button {
-  background-color: rgba(21,21,21,0.3);
+  background-color: rgba(72,61,139,0.9);
   color: white;
   padding: 0.5rem 1rem;
 }
