@@ -8,7 +8,7 @@
 //             .then(res=>res.json())
 //             .then(json=>console.log(json))
 
-fetch('https://fakestoreapi.com/products?sort=desc')
+fetch('https://fakestoreapi.com/products?sort=price')
             .then(res=>res.json())
             .then(json=>console.log(json))
 
@@ -16,12 +16,12 @@ fetch('https://fakestoreapi.com/products?sort=desc')
 // console.log(fetch("https://fakestoreapi.com/products?sort=desc"))
 
 function sortProductsPrice(order) {
-    fetch("https://fakestoreapi.com/products")
+    fetch("https://fakestoreapi.com/products?sort=price")
     .then(response => response.json())
     .then(data => {
-        if (order === "asc") {
+        if (order === "price") {
             data.sort((a, b) => a.price - b.price)
-        } else if (order === "desc") {
+        } else if (order === "price") {
             data.sort((a, b) => b.price - a.price)
         }
         // produktliste leeren
