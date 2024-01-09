@@ -12,7 +12,7 @@ const apiAllProduct = "https://fakestoreapi.com/products"
 const apiImage = "https://fakestoreapi.com/products/image"
 const apiCategories = "https://fakestoreapi.com/products/categories"
 const apiPrice = "https://fakestoreapi.com/products/price"
-
+const addToCart = "https://fakestoreapi.com/products/id"
 
 const getApiFunction = (apiLink) => {
     fetch(apiLink)
@@ -30,13 +30,13 @@ let main = document.querySelector("main")
 
 
 const showProduct = (einProduct) => {
-    console.log(einProduct.title);
+    console.log(einProduct.title)
     main.innerHTML += `
     <div>
     <img src ="${einProduct.image}" alt="${einProduct.title}">
     <h3>${einProduct.title}</h3>
     <p>${einProduct.price} €</p>
-
+    <button onclick = "addToCart(${einProduct.id})">Price Bomb</button>
     `
 }
 
