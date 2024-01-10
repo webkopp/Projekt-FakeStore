@@ -36,7 +36,7 @@ const showProduct = (einProduct) => {
     <img src ="${einProduct.image}" alt="${einProduct.title}">
     <h3>${einProduct.title}</h3>
     <p>${einProduct.price} €</p>
-    <button onclick = "addToCart(${einProduct.id})">Price Bomb</button>
+    <button onclick = "addToCart(${einProduct.id})">Buy now</button>
     </div>
     `
 }

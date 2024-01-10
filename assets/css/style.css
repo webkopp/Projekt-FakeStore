@@ -97,8 +97,8 @@ p {
 }
 
 main button {
+  width: max-content;
   background-color: rgba(72,61,139,0.9);
   color: white;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 3rem;
 }
-
