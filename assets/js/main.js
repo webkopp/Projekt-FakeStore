@@ -50,12 +50,23 @@ getApiFunction(addToCart)
 
 const sortProduct = (sortType) => {
     if (sortType === "lowTohigh") {
-        einProduct.sort((a, b) => a.price - b.price)
+        einProduct.price.sort((a, b) => a.price - b.price)
     } else if (sortType  === "highTolow") {
-        einProduct.sort((a, b) => b.price - a.price)
+        einProduct.price.sort((a, b) => b.price - a.price)
     }
-    showProduct(einProduct)
 }
+sortProduct(sortType)
+
+
+// function searchProduct() {
+//     let searching = document.querySelector("#searchMovie").value
+//     console.log("" + searching)
+//     let sorting = movies.includes(searching)
+    
+//     toHtml.innerHTML = ""
+//     sorting.forEach(moviesBox)
+// }
+
 
 // version1
 // fetch('https://fakestoreapi.com/products?sort=price')
